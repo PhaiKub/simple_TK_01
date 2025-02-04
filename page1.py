@@ -29,7 +29,7 @@ def show_popup():
     """แสดงข้อมูลผู้ใช้"""
     popup = Toplevel(window)
     popup.title("My Info")
-    popup.geometry("500x500")
+    popup.geometry("600x600")
 
     try:
         # โหลดและปรับขนาดรูปภาพ
@@ -57,7 +57,7 @@ def show_popup():
 window = tk.Tk()
 
 # ขนาดหน้าต่าง
-window.minsize(width=700, height=500)
+window.minsize(width=900, height=650)
 
 # ชื่อหน้าต่าง
 window.title('Mr.Thiraphat Auppananan')
@@ -77,31 +77,32 @@ menubar.add_cascade(label="File", menu=file_menu)
 
 # เมนูย่อย Tuesday
 tuesday_menu = Menu(menubar, tearoff=0)
-tuesday_menu.add_command(label="งานที่ 1", command=lambda: show_image("img/img1.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 2", command=lambda: show_image("img/img2.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 3", command=lambda: show_image("img/img3.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 4", command=lambda: show_image("img/img4.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 5", command=lambda: show_image("img/img5.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 6", command=lambda: show_image("img/img6.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 7", command=lambda: show_image("img/img7.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 8", command=lambda: show_image("img/img8.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 9", command=lambda: show_image("img/img9.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 10", command=lambda: show_image("img/img10.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 11", command=lambda: show_image("img/img11.png", 600, 400))
-tuesday_menu.add_command(label="งานที่ 12", command=lambda: show_image("img/img12.png", 600, 400))
+tuesday_menu.add_command(label="งานที่ 1", command=lambda: show_image("img/img1.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 2", command=lambda: show_image("img/img2.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 3", command=lambda: show_image("img/img3.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 4", command=lambda: show_image("img/img4.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 5", command=lambda: show_image("img/img5.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 6", command=lambda: show_image("img/img6.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 7", command=lambda: show_image("img/img7.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 8", command=lambda: show_image("img/img8.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 9", command=lambda: show_image("img/img9.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 10", command=lambda: show_image("img/img10.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 11", command=lambda: show_image("img/img11.png", 800, 600))
+tuesday_menu.add_command(label="งานที่ 12", command=lambda: show_image("img/img12.png", 800, 600))
 
 
 menubar.add_cascade(label="Tuesday", menu=tuesday_menu)
 
 # เมนูย่อย Thursday
 Friday_menu = Menu(menubar, tearoff=0)
-Friday_menu.add_command(label="งานที่ 1 ", command=lambda: subprocess.run(["python", "jobmenu/logintest1.py"]))
-Friday_menu.add_command(label="งานที่ 2 ", command=lambda: subprocess.run(["python", "jobmenu/logintodo.py"]))
-Friday_menu.add_command(label="งานที่ 3 ", command=lambda: subprocess.run(["python", "jobmenu/menu.py"]))
-Friday_menu.add_command(label="งานที่ 4 ", command=lambda: subprocess.run(["python", "jobmenu/simplelogin.py"]))
-Friday_menu.add_command(label="งานที่ 5", command=lambda: subprocess.run(["python", "jobmenu/simpleMenu.py"]))
-Friday_menu.add_command(label="งานที่ 6", command=lambda: subprocess.run(["python", "jobmenu/todolist.py"]))
-Friday_menu.add_command(label="งานที่ 7", command=lambda: subprocess.run(["python", "jobmenu/anything.py"]))
+Friday_menu.add_command(label="งานที่ 1", command=lambda: subprocess.run(["python", "jobmenu/ccword.py"]))
+Friday_menu.add_command(label="งานที่ 2 ", command=lambda: subprocess.run(["python", "jobmenu/logintest1.py"]))
+Friday_menu.add_command(label="งานที่ 3 ", command=lambda: subprocess.run(["python", "jobmenu/logintodo.py"]))
+Friday_menu.add_command(label="งานที่ 4 ", command=lambda: subprocess.run(["python", "jobmenu/menu.py"]))
+Friday_menu.add_command(label="งานที่ 5 ", command=lambda: subprocess.run(["python", "jobmenu/simplelogin.py"]))
+Friday_menu.add_command(label="งานที่ 6", command=lambda: subprocess.run(["python", "jobmenu/simpleMenu.py"]))
+Friday_menu.add_command(label="งานที่ 7", command=lambda: subprocess.run(["python", "jobmenu/todolist.py"]))
+Friday_menu.add_command(label="งานที่ 8", command=lambda: subprocess.run(["python", "jobmenu/anything.py"]))
 
 menubar.add_cascade(label="Friday", menu=Friday_menu)
 
