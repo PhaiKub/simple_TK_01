@@ -97,12 +97,12 @@ menubar.add_cascade(label="Tuesday", menu=tuesday_menu)
 
 # เมนูย่อย Thursday
 Friday_menu = Menu(menubar, tearoff=0)
-Friday_menu.add_command(label="งานที่ 1", command=lambda: subprocess.run(["python", "jobmenu/ccword.py"]))
-Friday_menu.add_command(label="งานที่ 2 ", command=lambda: subprocess.run(["python", "jobmenu/logintest1.py"]))
-Friday_menu.add_command(label="งานที่ 3 ", command=lambda: subprocess.run(["python", "jobmenu/anything.py"]))
-Friday_menu.add_command(label="งานที่ 4 ", command=lambda: subprocess.run(["python", "jobmenu/menutest.py"]))
-Friday_menu.add_command(label="งานที่ 5 ", command=lambda: subprocess.run(["python", "jobmenu/simplelogin.py"]))
-Friday_menu.add_command(label="งานที่ 6", command=lambda: subprocess.run(["python", "jobmenu/simpleMenu.py"]))
+Friday_menu.add_command(label="งานที่ 1 คัดลอกคำ", command=lambda: subprocess.run(["python", "jobmenu/ccword.py"]))
+Friday_menu.add_command(label="งานที่ 2 login", command=lambda: subprocess.run(["python", "jobmenu/logintest1.py"]))
+Friday_menu.add_command(label="งานที่ 3 อะไรก็ได้", command=lambda: subprocess.run(["python", "jobmenu/anything.py"]))
+Friday_menu.add_command(label="งานที่ 4 simpleWindow", command=lambda: subprocess.run(["python", "jobmenu/menutest.py"]))
+Friday_menu.add_command(label="งานที่ 5 Menu", command=lambda: subprocess.run(["python", "jobmenu/simplelogin.py"]))
+Friday_menu.add_command(label="งานที่ 6 simpleMenu", command=lambda: subprocess.run(["python", "jobmenu/todolist.py"]))
 
 menubar.add_cascade(label="Friday", menu=Friday_menu)
 
