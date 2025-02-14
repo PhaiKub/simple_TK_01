@@ -9,7 +9,7 @@ def ck_login():
     if userid == "admin" and password == "1234":
         messagebox.showinfo("Login Successful", "Welcome!")
         windows.destroy()  # ปิดหน้าต่างล็อกอิน
-        subprocess.run(["python", "page1.py"])  # เรียกไฟล์ page1.py
+        subprocess.run(["python", "code/page1.py"])  # เรียกไฟล์ page1.py
     else:
         messagebox.showerror("Login Failed", "Invalid username or password.")
 
